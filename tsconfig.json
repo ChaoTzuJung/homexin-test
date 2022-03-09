@@ -1,26 +1,37 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    /* Projects */
+    /* Language and Environment */
+    "target": "es5" /* 輸出的版本 */,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    /* JavaScript Support*/
+    "allowJs": true /* 允許在 ts 檔案內引入 js 檔案 */,
+    /* Module */
     "module": "esnext",
+    // "rootDir": "./src",
     "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@contexts/*": ["./src/contexts/*"]
+    },
     "resolveJsonModule": true,
+    /* Interop Constraints */
     "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Emit */
     "noEmit": true,
-    "jsx": "react-jsx"
+    // "outDir": "./dist/",  /* 輸出的位置 */
+    "sourceMap": true /* 輸出的位置 */,
+    /* Type Checking */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Completeness */
+    "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "./.storybook/**/*"],
+  "exclude": ["node_modules"]
 }
