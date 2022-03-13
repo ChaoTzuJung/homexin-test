@@ -11,11 +11,13 @@ export const GlobalStyle = createGlobalStyle`
         --orange: #FFAC30;
         --yellow: #F2F2F2;
         --lightGrey: #F1F3F6;
+        --mediumGrey: #767676;
         --grey: #9A99A2;
+        --darkGrey: #CCCFD3;
         --red: #D63939;
         --line: #E0E0E0;
+        --cardBackground: #f1f3f6;
         --inputBackgroundColor: #F6F6F6;
-        --inputBorderColor: #CCCFD3;
         --textColor: #171822;
         --white: #FFFFFF;
         --black: #000000;
