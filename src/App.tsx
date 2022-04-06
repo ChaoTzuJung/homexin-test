@@ -1,5 +1,5 @@
-import { ThemeProvider } from "./contexts/Theme";
-import Title from "./components/Title";
+import { ThemeProvider } from "@/contexts/Theme";
+import Title from "@/components/Title";
 
 function App() {
   return (
