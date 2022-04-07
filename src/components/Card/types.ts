@@ -1,5 +1,6 @@
-export interface CardPropsI {
+import { ParentsBaseT } from "../../types";
+
+export interface CardPropsI extends ParentsBaseT {
   color?: string;
   type?: "shadow" | "border" | "normal";
-  children: React.ReactNode;
 }
