@@ -12,7 +12,7 @@ export const S = {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(196, 196, 196, 0.5);
     visibility: ${(props: ShadePropsI) => (props.open ? "visible" : "hidden")};
     z-index: 200;
   `,
